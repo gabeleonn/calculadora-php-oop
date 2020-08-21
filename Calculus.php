@@ -18,7 +18,15 @@ class Calculus extends Operation
 
     private function handleValues($input)
     {
-        return preg_split("/[*\/+\-]/", $input);
+        $arr = preg_split("/[*\/+\-]/", $input);
+        $values = [];
+
+        foreach ($arr as $val) {
+            if (preg_match("/[0-9]/", $val)) {
+                array_push($values, $val);
+            }
+        }
+        return $values;
     }
 
     private function handleOperator($arr)
