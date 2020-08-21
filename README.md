@@ -15,3 +15,8 @@ Digite sua formula como uma string. Com ou sem espaços funciona.
 ![diagrama uml](diagrama.png)
 
 **OBS: Não está funcionando para mais do que uma operação por vez e o programa encerra após a operação.**
+
+## Bugs
+
+* Lista de bugs
+  * Expressão 1*+2, 1++2 gera erro.
