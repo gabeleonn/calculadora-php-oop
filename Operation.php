@@ -4,7 +4,7 @@ class Operation
 
   public function handleOperation()
   {
-    $operator = $this->operator;
+    $operator = trim($this->operator);
     $num1 = trim($this->num1);
     $num2 = trim($this->num2);
 

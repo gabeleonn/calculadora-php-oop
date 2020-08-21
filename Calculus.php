@@ -7,7 +7,6 @@ class Calculus extends Operation
     public $num1;
     public $num2;
     public $operator;
-    public $result;
 
     public function __construct($string)
     {
@@ -37,12 +36,6 @@ class Calculus extends Operation
 
     public function getResult()
     {
-        $this->setResult();
-        return $this->result;
-    }
-
-    private function setResult()
-    {
-        $this->result = $this->handleOperation();
+        return $this->handleOperation();
     }
 }
