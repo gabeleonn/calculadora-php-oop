@@ -19,4 +19,4 @@ Digite sua formula como uma string. Com ou sem espaços funciona.
 ## Bugs
 
 * Lista de bugs
-  * Expressão 1*+2, 1++2 gera erro.
+  * Expressão 1*+2, 1++2 gera erro. (fixed)
